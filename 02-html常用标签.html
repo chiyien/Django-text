@@ -1,0 +1,130 @@
+1. 文本标签
+    <hn>...</hn> 其中n为1--6的值。标题标签（h1最大，h6最小）
+    <i>...</i> 斜体
+    <em>...</em> 强调斜体
+    <b>...</b> 加粗
+    <strong>...</strong> 强调加粗
+    <cite></cite> 作品的标题(引用)
+    <sub>...</sub>下标 
+    <sup>...</sup>上标
+    <u>...</u> 下划线标签
+    <del>...</del> 删除线
+
+
+2. 格式化标签
+    <br/> 换行
+    <p>...</p> 换段落
+    <hr> 水平分割线
+    ·列表：
+        <ul>...</ul> 无序列表，默认用黑点来标识不同的项，type="circle"可以将黑点变为空心白点
+        <ol>...</ol> 有序列表 其中type类型值：Aali1（有序排列a，A，1，I，i），start属性表示起始值
+        <li>...</li> 列表项
+        <dl>...</dl> 自定义列表
+        <dt>...</dt> 自定义列表头
+        <dd>...</dd> 自定义列表内容
+    <div>...</div> 常用于组合块级元素，可以通过css来对这些元素进行格式化
+    <span>...</span> 常用于包含的文本，可以用css对它定义样式，或者用JavaScript对它操作
+
+
+
+3. 图片标签
+    <img src="" alt="" title="" width="" height="" border="">
+    属性：
+    ·src：图片名及url地址
+    ·alt：图片加载失败时的提示信息
+    ·title：文字提示属性（鼠标放上去之后的信息提示）
+    ·width：图片宽度
+    ·height：图片高度
+    ·border：边框线粗细
+
+
+4. ·超链接标签
+    <a href="">...</a>
+    属性：
+    ·href：必须，指的是链接跳转的地址
+    ·target：表示链接打开的方式：
+        ·_blank 新窗口
+        ·_parent 父窗口
+        ·_self 本窗口（默认）
+        `_top 顶级窗口
+        ·framename 窗口名
+    ·title：文字提示属性（详情）
+
+    ·锚点链接：跳转到某个链接的某个位置
+    ·定义一个锚点：<a id="a1"></a>
+    ·使用锚点：<a href="#a1">跳到a1处</a>
+
+
+5. 表格标签，支持嵌套
+    <table>...</table> 表格标签
+    属性：
+        border 表格线，0表示没有表格线
+        width 表格宽度
+        cellspacing 单元格之间的距离，默认2，可以指定为0，代表没有缝隙
+        cellpadding 单元格的内容和单元格线之间的距离，默认0
+    <caption>...</caption> 表格标题
+    <tr>...</tr> 行标签，一个tr是一行
+    <th>...</th> 列头标签
+    <td>...</td> 列标签，一个td是一格
+        属性：
+        rowspan 跨行，只能由上往下跨行
+        align 左中右，行内容定位
+        valign 上中下，行内容定位
+        colspan 跨列
+
+    <thead>...</thead> 表头
+    <tbody>...</tbody> 表体
+    <tfoot>...</tfoot> 表尾
+
+
+6. 表单标签，不支持嵌套
+    <form action="" method=""></form> 表单标签，action表示目标地址，method表示表单提交方式
+        method提交方式：
+        get
+        post，安全
+    <input type="" name="" value=""> 表单项标签，input定义输入字段，用户可在其中输入数据，type的类型决定了input标签的类型
+    name表示声明变量用以存储用户输入的数据，并将数据以method的提交方式提交到action目标地址
+    type类型：
+        text 单行文本输入框
+        passowrd 密码输入框
+        submit 提交按钮
+        reset 重置按钮
+        radio 单选
+        checkbox 多选，checked 表示默认选中
+        url 网址
+        range 指数
+        number 数字
+        email 邮箱，placeholder 输入框内的提示信息，通用
+        button 按钮
+        file 文件上传
+        image 图像提交按钮
+        date 日期
+        color 颜色
+
+    <select name="" id=""></select> 创建下拉列表
+        <option value=""></option> 自定义下拉菜单选项
+    <textarea name="" id="" cols="30" rows="10"></textarea> 多行的文本输入区域
+    <button></button> 自定义按钮标签
+    <fieldset></fieldset> 元素可将表单内的相关元素分组
+    <legend></legend> 标签为<fieldset>、<figure>以及<details>元素定义标题
+    <detalist>html5标签</detalist> 标签定义可选数据的列表
+    <optgroup>html5标签</optgroup> 标签定义选项组，实现下拉框的分组
+
+7. 行内框架
+    <iframe src="" name="" width="" height="" frameborder="0"></iframe> 行内框架
+    属性：
+        src：规定在iframe中显示的文档的URL
+        name：规定iframe的名称
+        height：规定iframe高度
+        width：规定iframe宽度
+        frameborder：规定是否显示框架周围的边框
+
+8. 多媒体标签
+    <audio src="" controls>
+        你的浏览器不支持audio音频标签
+    </audio> 音频标签，默认隐藏，加上controls则会显示，如果浏览器不支持，则显示文字
+    <video src="" controls>
+        你的浏览器不支持video音频标签
+    </video> 视频标签，默认隐藏，加上controls则会显示，如果浏览器不支持，则显示文字
+    播放Flash的标签
+        <embed src="" type="" width="" height="">
