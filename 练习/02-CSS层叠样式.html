@@ -1,0 +1,33 @@
+<!-- 层叠样式练习  -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- #内嵌css样式 -->
+    <style>
+        h1{font-size: 30px; color: blue; background-color: yellow;}
+    </style>
+    <!-- #内嵌css样式 -->
+
+    <link rel="stylesheet" href="./my.css">
+
+</head>
+<body>
+    <!-- #内嵌css样式 -->
+    <h1>内部方式嵌入css样式</h1>
+    <!-- #内嵌css样式 -->
+    
+    <ul>
+        <!-- #外部导入css文件中标记标签名，不需要在html文件中指定那个标签使用 -->
+        <li>外部导入css文件样式，没有样式冲突，叠加显示</li>
+        <li style="color: blue;">样式冲突，就近原则</li>
+        <li style="color: darkolivegreen;">内联方式，在标签中直接写入css样式</li>
+    </ul>
+    
+</body>
+</html>
+<!-- 层叠样式练习  -->
