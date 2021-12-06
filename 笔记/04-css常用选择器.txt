@@ -15,13 +15,26 @@
 
 2. css3选择器(了解)
     2.1 关系选择器
-    div>p 选择所有作为div元素的直接子元素p
-    ul > li{color: blue;} ul中的直接子li标签采用此样式
-    div+p 选择紧邻在div元素之后的一个p元素
-    div~p 选择div元素后面的所有兄弟元素p
+    div>p div中直接子标签p采用此样式（ul > li{color: blue;} ul中的直接子li标签采用此样式）
+    div+p 紧邻div的一个p兄弟标签采用此样式
+    div~p div后面所有兄弟p标签都采用此样式
+
     2.2 属性选择器
+    li[class]{...} 含有class属性的li标签采用此样式
+    li[class="value"]{...} 含有class属性且属性值为value的li标签采用此样式
+    li[class~="value"]{...} 含有class属性值（以空格分隔开）中有value的li标签采用此样式
+    li[class|="value"]{...} 含有class属性值（以-分隔开）以value开头的li标签采用此样式
+    li[class^="value"]{...} class属性值是以value开头的li标签
+    li[class$="value"]{...} class属性值是以value结尾的li标签
+    li[class*="value"]{...} class属性值中含有value的li标签
+
 
     2.3 结构性伪类选择器
+    见文档
+
+    2.4 状态性伪类选择器
+    见文档
+
 
 2. 优先级
     id选择器>类选择器>HTML选择器

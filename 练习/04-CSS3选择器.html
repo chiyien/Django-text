@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>css3选择器</title>
+
+    <!-- 关系选择器 -->
+    <style>
+        /* ul中所有子标签li都采用此样式 */
+        /* ul li{color: blue;} */
+
+        /* ul中的直接子标签li采用此样式(ol中的li标签不会采用) */
+        /* ul>li{color: red;} */
+
+        /* 紧邻div的一个兄弟p标签采用此样式 */
+        /* div+p{color: rosybrown;} */
+
+        /* div后面的所有兄弟p标签都采用此样式 */
+        /* div~p{color: seagreen;} */
+    </style>
+    <!-- 关系选择器 -->
+
+    <!-- 属性选择器 -->
+    <style>
+        /* li[class]{...} 含有class属性的li标签采用此样式 */
+        /* li[class]{color: red;} */
+
+        /* li[class="value"]{...} 含有class属性且属性值为value的li标签采用此样式 */
+        /* li[class="aa"]{color: blue;} */
+
+        /* li[class~="value"]{...} 含有class属性值（以空格分隔开）中有value的li标签采用此样式 */
+        /* li[class~="aa"]{color: green;} */
+
+        /* li[class|="value"]{...} 含有class属性值（以-分隔开）以value开头的li标签采用此样式 */
+        /* li[class|="bb"]{color: indigo;} */
+
+        /* li[class^="value"]{...} class属性值是以value开头的li标签 */
+        /* li[class^="cc"]{color: plum;} */
+
+        /* li[class$="value"]{...} class属性值是以value结尾的li标签 */
+        /* li[class$="bb"]{color: yellow;} */
+
+        /* li[class*="value"]{...} class属性值中含有value的li标签 */ 
+        /* li[class*="aa"]{color: saddlebrown;} */
+
+    </style>
+    <!-- 属性选择器 -->
 </head>
 <body>
+    <!-- 关系选择器 -->
     <h1>关系选择器</h1>
 
     <ul>
@@ -17,5 +60,32 @@
             <li>列表二级子项目2</li>
         </ol>
     </ul>
+    
+    <div>aaaaaa</div>
+    <p>qqqqqqqqqqq</p>
+    <p>qqqqqqqqqqq</p>
+
+    <div>bbbbbb</div>
+    <p>qqqqqqqqqqq</p>
+    <p>qqqqqqqqqqq</p>
+    <p>qqqqqqqqqqq</p>
+    <!-- 关系选择器 -->
+
+
+    <!-- 属性选择器 -->
+    
+    <ul>
+        <li title="123">1. title</li>
+        <li class="aa">2. html选择器</li>
+        <li class="aa bb">3. 属性选择器</li>
+        <li class="aa-bb">4. 属性选择器</li>
+        <li class="cc bb">5. 属性选择器</li>
+        <li class="dd aa">6. 属性选择器</li>
+        <li class="cc dd">7. 属性选择器</li>
+    </ul>
+
+
+    <!-- 属性选择器 -->
+
 </body>
 </html>
