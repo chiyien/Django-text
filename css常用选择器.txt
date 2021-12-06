@@ -13,13 +13,14 @@
     a:active {color:black; text-decoration: underline;} 激活链接
 
 
-2. css3选择器
+2. css3选择器(了解)
     2.1 关系选择器
-    div>p 选择所有作为div元素的子元素p
-    div+p 选择紧贴在div元素之后的p元素
-    div-p 选择div元素后面的所有兄弟元素p
+    div>p 选择所有作为div元素的直接子元素p
+    ul > li{color: blue;} ul中的直接子li标签采用此样式
+    div+p 选择紧邻在div元素之后的一个p元素
+    div~p 选择div元素后面的所有兄弟元素p
     2.2 属性选择器
-    
+
     2.3 结构性伪类选择器
 
 2. 优先级
