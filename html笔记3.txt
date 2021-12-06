@@ -1,0 +1,26 @@
+1. HTML常用选择器
+    1.1 HTML选择器，把html标签作为选择器使用
+    1.2 类选择器，使用点.将自定义类名来定义的选择器
+    1.3 id选择器，使用#将自定义id来定义的选择器
+    1.4 关联选择器（包含选择器），格式：选择符1 选择符2 选择符3...{样式...}
+    table a{...} table标签里的a标签才会采用此样式
+    1.5 组合选择器，格式：选择符1,选择符2,选择符3...{样式...}
+    h3,h4,h1{...} h3,h4,h1标签都会采用此样式
+    1.6 伪类选择器，格式：标签名:伪类名{...}
+    a:link {color: red; text-decoration: none;} 未访问的链接
+    a:visited {color: blue; text-decoration: none;} 已访问的链接
+    a:hover {color: green; text-decoration: underline;} 鼠标在链接上
+    a:active {color:black; text-decoration: underline;} 激活链接
+
+
+2. css3选择器
+    2.1 关系选择器
+    div>p 选择所有作为div元素的子元素p
+    div+p 选择紧贴在div元素之后的p元素
+    div-p 选择div元素后面的所有兄弟元素p
+    2.2 属性选择器
+    
+    2.3 结构性伪类选择器
+
+2. 优先级
+    id选择器>类选择器>HTML选择器

@@ -6,18 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 1.HTML选择器 */
+        /* 1.HTML选择器，把html标签作为选择器使用 */
         h1{color: rebeccapurple;}
-        /* 2.类选择器 */
+        /* 2.类选择器，使用点.将自定义类名来定义的选择器 */
         .cc{color: red;}
+        li.cc{background-color: royalblue;}
+        li.dd{color: sienna;}
+        /* 3.id选择器， */
+        #hid{font-size: 30px;}
+        /* 4.关联选择器 */
+        ol li{color: seagreen;}
+        /* 5.组合选择器 */
+        h1,h2,h3,h4{font-size: 40px;}
+        /* 6.伪类选择器 */
+        a:link {color:sienna; text-decoration: none;} /*未访问的链接*/
+        a:visited {color:silver; text-decoration: none;} /*已访问的链接*/
+        a:hover {color: green; text-decoration: underline;} /*鼠标在链接上*/
+        a:active {color:blue; text-decoration: underline;} /*激活链接*/
+
+
+
     </style>
 
 </head>
 <body>
-    <h1>css HTML选择器</h1>
+    <h1>css HTML选择器测试1</h1>
+    <h2 class="cc">css类选择器测试2</h2>
+    <h3 id="hid">css id选择器测试1</h3>
+    <h4>组合选择器测试1</h4>
+
     <ul>
-        <li class="cc">css类选择器</li>
+        <li class="cc">css类选择器测试1</li>
+        <li class="dd">css类选择器测试3</li>
+        <li>css关联选择器测试2</li>
     </ul>
     
+    <ol>
+        <li>css关联选择器测试1</li>
+    </ol>
+
+    <a href="https://www.baidu.com" target="_blank">baidu</a><br>
+
+    <a href="https://github.com/chiyien/Django-text" target="_blank">django-text.github</a>
+
 </body>
 </html>
